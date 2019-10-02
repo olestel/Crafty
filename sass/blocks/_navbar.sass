@@ -1,0 +1,35 @@
+.navbar
+    padding: 22px 0
+    background-color: #353434
+    &-block
+        display: flex
+        justify-content: space-between
+    &__menu
+        width: 50%
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &__social
+        display: flex
+        justify-content: space-around
+        align-items: center
+        &__text
+            +reg
+            text-decoration: none
+            color: #ffffff
+            padding: 8px 13px
+            border: 2px #ffffff solid
+            margin-left: 10px
+            &:hover
+                color: #18b318c0
+                border: 2px #18b318c0 solid
+    &__text
+        padding: 0
+        +reg
+        text-decoration: none
+        color: #ffffff
+        &:hover
+            color: #18b318c0
+    &__border
+        height: 100%
+        border-left: 1px #404040 solid
