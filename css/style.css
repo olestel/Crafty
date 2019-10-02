@@ -100,11 +100,14 @@ img {
 }
 
 .navbar__social__text {
-  font-family: 'Lato Regular', sans-serif;
+  width: 35px;
+  height: 35px;
+  font-family: 'Avant Garde LT Extralight', arial;
   font-weight: 400;
   text-decoration: none;
   color: #ffffff;
-  padding: 8px 13px;
+  padding-top: 7px;
+  text-align: center;
   border: 2px #ffffff solid;
   margin-left: 10px;
 }
