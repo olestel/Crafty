@@ -14,9 +14,22 @@ for(let i = 0; i < slides.length; i++){
 allIndecators[currentSlide].className = 'authors-slider__indicator selected';
 
 function nextSlide() {
+    for(let j = 0; j < allIndecators.length; j++) {
+        allIndecators[j].addEventListener('click', function () {
+            slides[currentSlide].className = 'authors-slider__item';
+            allIndecators[currentSlide].className = 'authors-slider__indicator';
+            slides[j].className = 'authors-slider__item showing';
+            allIndecators[j].className = 'authors-slider__indicator selected';
+            currentSlide = j;
+        })
+    }
+    console.log(currentSlide);
     slides[currentSlide].className = 'authors-slider__item';
     allIndecators[currentSlide].className = 'authors-slider__indicator';
-    currentSlide = (currentSlide+1)%slides.length;
+    currentSlide++;
+    if(currentSlide >= slides.length) currentSlide = 0;
     slides[currentSlide].className = 'authors-slider__item showing';
     allIndecators[currentSlide].className = 'authors-slider__indicator selected';
+
 }
+
