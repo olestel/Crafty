@@ -77,12 +77,13 @@ img {
 }
 
 .navbar__menu {
-  width: 50%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -123,6 +124,7 @@ img {
   font-weight: 400;
   text-decoration: none;
   color: #ffffff;
+  font-size: 16px;
 }
 
 .navbar__text:hover {
@@ -235,5 +237,101 @@ img {
 
 .features__link:hover {
   color: #000000;
+}
+
+/* Import authors style */
+.authors {
+  text-align: center;
+  margin: auto;
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+  color: #8f8e8e;
+}
+
+.authors-line {
+  display: inline-block;
+  text-align: center;
+  width: 13px;
+  height: 100px;
+}
+
+.authors-line:after {
+  content: "";
+  width: 1px;
+  display: block;
+  background: #dedede;
+  height: 100%;
+  margin-left: 6px;
+}
+
+.authors__top {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #dedede;
+}
+
+.authors__bottom {
+  margin-top: 40px;
+  border-top: 1px solid #dedede;
+}
+
+.authors-title {
+  margin-top: 0;
+  margin-bottom: 65px;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #4f4f4f;
+  letter-spacing: 1.3px;
+}
+
+.authors-slider {
+  position: relative;
+  width: 1050px;
+  margin: auto;
+  height: 190px;
+}
+
+.authors-slider__item {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.authors-slider__author {
+  font-family: 'Lato Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: #686767;
+}
+
+.authors-slider__indicator {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: #dadada;
+  margin: auto;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+.authors-slider__indicator:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.selected {
+  background: #bebebe;
 }
 /*# sourceMappingURL=style.css.map */
