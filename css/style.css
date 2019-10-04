@@ -389,4 +389,62 @@ img {
   text-decoration: none;
   color: #ffffff;
 }
+
+/* Import Auth style */
+.auth {
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+}
+
+.auth-title {
+  font-family: 'Lato Bold', sans-serif;
+  font-weight: 700;
+  color: #6b6b6b;
+  font-size: 34px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+}
+
+.auth-description {
+  color: #7f7d7d;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.42px;
+  margin-bottom: 60px;
+}
+
+.auth-button {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: #65bf95;
+  border: none;
+  padding: 20px 60px;
+}
+
+.auth-button:hover {
+  background-color: #3f986f;
+  cursor: pointer;
+}
+
+.auth-bottom_line {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+}
+
+.auth-bottom_line:after {
+  content: "";
+  width: 1px;
+  display: block;
+  background: #dedede;
+  height: 100px;
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */

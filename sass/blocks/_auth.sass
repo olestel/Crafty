@@ -1,0 +1,41 @@
+.auth
+    text-align: center
+    padding-top: 100px
+    +reg
+    &-title
+        +bold
+        color: #6b6b6b
+        font-size: 34px
+        line-height: 20px
+        text-transform: uppercase
+        letter-spacing: 1.7px
+    &-description
+        color: #7f7d7d
+        font-size: 17px
+        line-height: 20px
+        letter-spacing: 0.42px
+        margin-bottom: 60px
+    &-button
+        color: #ffffff
+        font-size: 20px
+        line-height: 20px
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        background-color: #65bf95
+        border: none
+        padding: 20px 60px
+        &:hover
+            background-color: darken(#65bf95, 15%)
+            cursor: pointer
+    &-bottom_line
+        display: inline-block
+        text-align: center
+        width: 100%
+        border-bottom: 1px solid #dedede
+        &:after
+            content: ""
+            width: 1px
+            display: block
+            background: #dedede
+            height: 100px
+            margin: auto
