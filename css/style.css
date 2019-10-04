@@ -437,6 +437,7 @@ img {
   text-align: center;
   width: 100%;
   border-bottom: 1px solid #dedede;
+  margin-bottom: -3px;
 }
 
 .auth-bottom_line:after {
@@ -446,5 +447,33 @@ img {
   background: #dedede;
   height: 100px;
   margin: auto;
+}
+
+/* Import Footer style */
+.footer {
+  padding: 100px;
+  text-align: center;
+  background-color: #f7f7f7;
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400;
+}
+
+.footer-image {
+  display: block;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+.footer-text {
+  color: #3b3b3b;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-text__url {
+  text-decoration: none;
+  font-family: 'Lato Bold', sans-serif;
+  font-weight: 700;
+  color: #3b3b3b;
 }
 /*# sourceMappingURL=style.css.map */
