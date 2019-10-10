@@ -118,16 +118,47 @@ img {
 
 .navbar__text:hover {
   color: #18b318c0;
+  cursor: pointer;
 }
 
 .navbar__border {
+  margin-left: 40px;
   height: 100%;
   border-left: 1px #404040 solid;
+}
+
+.navbar__list {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar__list li {
+  list-style: none;
+}
+
+.navbar__list ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
   .navbar__menu {
     width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    width: 100%;
+  }
+  .navbar__social {
+    display: none;
   }
 }
 
@@ -159,6 +190,13 @@ img {
 @media (max-width: 1024px) {
   .billboard-slogan {
     margin-left: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .billboard-slogan {
+    text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -254,6 +292,29 @@ img {
   }
   .features__title {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features__block {
+    max-width: 320px;
+  }
+  .features__image {
+    width: 60px;
+    height: 60px;
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 414px) {
+  .features-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features__block {
+    max-width: 90%;
   }
 }
 
@@ -364,6 +425,12 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .authors-slider__author {
+    display: none;
+  }
+}
+
 /* Import Info style */
 .info {
   display: -webkit-box;
@@ -440,6 +507,15 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .info-text__title {
+    letter-spacing: 1px;
+  }
+  .info-text__description {
+    letter-spacing: 1px;
+  }
+}
+
 /* Import Auth style */
 .auth {
   text-align: center;
@@ -497,6 +573,17 @@ img {
   background: #dedede;
   height: 100px;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .auth {
+    margin: auto;
+    width: 80%;
+  }
+  .auth-title {
+    margin: 0;
+    line-height: 40px;
+  }
 }
 
 /* Import Footer style */
