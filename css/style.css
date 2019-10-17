@@ -136,7 +136,7 @@ img {
   list-style: none;
 }
 
-.navbar__list ul {
+.navbar-block ul {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,7 +180,7 @@ img {
   .navbar__list li:last-child {
     margin-bottom: 0;
   }
-  .navbar__list ul {
+  .navbar-block ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
